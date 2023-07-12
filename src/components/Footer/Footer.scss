@@ -46,6 +46,9 @@
           @include md {
             font-size: 12px;
           }
+          @include sm {
+            font-size: 9px;
+          }
 
           li {
             cursor: pointer;
