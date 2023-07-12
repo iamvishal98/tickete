@@ -2,7 +2,7 @@ import React from "react";
 import { Collapse } from "antd";
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons";
 import ChatsCircle from "../../assets/ChatsCircle.svg";
-import "./faq.scss";
+import "./Faq.scss";
 import data from "../../data/faq";
 
 const items = data.map((qa) => ({
