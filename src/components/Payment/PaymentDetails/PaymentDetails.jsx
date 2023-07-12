@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import CustomInput from "../../CustomInput/CustomInput";
-import InputBorder from "../../../assets/input-border.svg";
 import Cardpayment from "../../../assets/card-payment.svg";
 import Flag from "../../../assets/flag.svg";
 import Visa from "../../../assets/Visa.svg";
-import SavedCard from "../../../assets/klarna.svg";
+import SavedCard from "../../../assets/Klarna.svg";
 import ButtonLogo from "../../../assets/ShieldCheckered.svg";
 import { Button, Divider, Form, Radio } from "antd";
 import "./PaymentDetails.scss";
@@ -14,13 +13,9 @@ const PaymentDetails = () => {
   const onChange = (e) => {
     setValue(e.target.value);
   };
-  const onFinish = (values) => {
-    console.log("Success:", values);
-  };
   return (
     <div className="payment-details">
-      {/* <h1>Confirm and pay</h1> */}
-      <Form onFinish={onFinish}>
+      <Form>
         <div className="sub-section-title">
           <h3>Enter your Details</h3>
           <p>
@@ -28,18 +23,18 @@ const PaymentDetails = () => {
             friend? Add their details.
           </p>
           <div className="form-inputs">
-            <CustomInput label={InputBorder} placeholder="test123" />
+            <CustomInput label={"Full Name"} placeholder="test123" />
             <CustomInput
-              label={InputBorder}
+              label={"Phone Number"}
               placeholder="test123"
               prefixIcon={Flag}
             />
-            <CustomInput label={InputBorder} placeholder="test123" />
+            <CustomInput label={"Full Name"} placeholder="test123" />
             <Form.Item
               name="username"
               rules={[{ required: true, message: "error message!" }]}
             >
-              <CustomInput label={InputBorder} placeholder="test123" />
+              <CustomInput label={"Full Name"} placeholder="test123" />
             </Form.Item>
           </div>
         </div>
@@ -47,8 +42,8 @@ const PaymentDetails = () => {
           <h3>Additional information</h3>
           <p>We need a few more details to complete your reservation.</p>
           <div className="form-inputs">
-            <CustomInput label={InputBorder} placeholder="test123" />
-            <CustomInput label={InputBorder} type="selector" />
+            <CustomInput label={"Full Name"} placeholder="test123" />
+            <CustomInput label={"Dropdown"} type="selector" />
           </div>
         </div>
         <div className="sub-section-title">
@@ -61,14 +56,14 @@ const PaymentDetails = () => {
             </Radio>
             {value === 1 && (
               <div className="form-inputs">
-                <CustomInput label={InputBorder} placeholder="test123" />
+                <CustomInput label={"Name on Card"} placeholder="test123" />
                 <CustomInput
-                  label={InputBorder}
+                  label={"Card Number"}
                   placeholder="test123"
                   suffixIcon={Visa}
                 />
-                <CustomInput label={InputBorder} placeholder="test123" />
-                <CustomInput label={InputBorder} placeholder="test123" />
+                <CustomInput label={"Expiry Date"} placeholder="test123" />
+                <CustomInput label={"CVV/CVC"} placeholder="test123" />
               </div>
             )}
             <Divider />

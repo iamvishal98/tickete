@@ -5,9 +5,7 @@ import "./Input.scss";
 const CustomInput = ({ label, placeholder, suffixIcon, prefixIcon, type }) => {
   return (
     <div className="custom-input">
-      <label>
-        <img src={label} alt="input-border-text" />
-      </label>
+      <label className="typography4">{label}</label>
       {type != "selector" ? (
         <Input
           placeholder={placeholder}

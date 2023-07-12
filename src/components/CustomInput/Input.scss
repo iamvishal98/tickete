@@ -5,9 +5,11 @@
   label {
     position: absolute;
     z-index: 10;
-    top: -10px;
+    top: -7px;
     left: 20px;
     background-color: white;
+    color: var(--grey1);
+    padding: 0 2px;
   }
 
   .ant-input {
@@ -18,7 +20,7 @@
     border-radius: 12px;
   }
   .ant-input-affix-wrapper {
-    padding: 0px 11px;
+    padding: 0px 9px;
     border-radius: 12px;
   }
 
