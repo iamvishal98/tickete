@@ -1,0 +1,49 @@
+@import "../../mixins.scss";
+
+.trust-booster {
+  padding-top: 20px;
+  .typography {
+    line-height: 32px;
+    font-size: 24px;
+  }
+  .promises {
+    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    @include md {
+      grid-template-columns: 1fr;
+    }
+    .promise {
+      border-radius: 12px;
+      border: 1px solid #d6d6d6;
+      padding: 20px;
+      @include md {
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0px;
+        img {
+          height: 24px;
+          width: 24px;
+        }
+      }
+      .promise-text {
+        margin-top: 40px;
+        @include md {
+          margin-top: 0px;
+        }
+        .heaing {
+          font-weight: 400;
+          line-height: 20px;
+          font-size: 16px;
+          color: var(--grey2);
+        }
+        .typography2 {
+          color: var(--grey1);
+        }
+      }
+    }
+  }
+}

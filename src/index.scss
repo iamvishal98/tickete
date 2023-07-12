@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --black: #0a0a0a;
+  --grey1: #595959;
+  --grey2: #474747;
+  --grey3: #d6d6d6;
+  --offwhite: #f5f5f5;
+  --slightwhite: #f6f6f7;
+  --maroon: #7f2d0f;
+  --link: #1733b6;
+  --success: #006642;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* COMMON STYLES */
+
+.typography {
+  font-weight: 600;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+.typography2 {
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 16px;
+}
+.typography3 {
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+.card {
+  border-radius: 8px;
+  background-color: var(--offwhite);
+  padding: 20px 10px;
+  font-weight: 600;
+  line-height: 18px;
+  size: 12px;
+  color: var(--grey2);
+}
+
+.underlined-info {
+  font-weight: 400;
+  line-height: 16px;
+  font-size: 12px;
+  color: var(--grey2);
+  text-decoration: underline;
+}
+
+.divider,
+.ant-divider {
+  border: 1px solid var(--grey3);
+}
+
+.max-width-container {
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+}
+
+.ant-radio-wrapper > .ant-radio-checked > .ant-radio-inner {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+.ant-form-item .ant-form-item-explain-error {
+  padding: 0px 10px;
+}
+
+.ant-collapse-borderless > .ant-collapse-item {
+  border-bottom: 1px solid var(--grey3);
+}

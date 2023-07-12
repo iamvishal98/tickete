@@ -1,0 +1,38 @@
+@import "../../mixins.scss";
+.custom-input {
+  position: relative;
+
+  label {
+    position: absolute;
+    z-index: 10;
+    top: -10px;
+    left: 20px;
+    background-color: white;
+  }
+
+  .ant-input {
+    padding: 16px !important;
+    color: var(--grey2);
+    font-weight: 400;
+    line-height: 20px;
+    border-radius: 12px;
+  }
+  .ant-input-affix-wrapper {
+    padding: 0px 11px;
+    border-radius: 12px;
+  }
+
+  .ant-select {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .ant-select-selector {
+      height: 100%;
+      align-items: center;
+      border-radius: 12px;
+      @include md {
+        padding: 11px;
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+@import "../../mixins.scss";
+
+.footer-container {
+  background-color: #0a0a0a;
+  height: 278px;
+  color: #ebebeb;
+  .max-width-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    @include md {
+      gap: 80px;
+      hr {
+        display: none;
+      }
+    }
+
+    .footer-logo {
+      margin-top: 30px;
+      height: 40px;
+      width: 120px;
+      svg {
+        fill: #ffffff;
+      }
+    }
+    .footer-links {
+      margin-top: -50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include md {
+        margin: 0;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .left {
+        flex: 2;
+        ul {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          text-decoration: underline;
+          @include md {
+            font-size: 12px;
+          }
+
+          li {
+            cursor: pointer;
+            &:first-child {
+              list-style-type: none;
+            }
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        gap: 10px;
+      }
+    }
+  }
+}

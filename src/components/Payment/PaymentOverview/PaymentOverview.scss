@@ -1,0 +1,99 @@
+@import "../../../mixins.scss";
+.payment-overview {
+  flex: 1;
+  margin-top: -120px;
+  @include md {
+    margin-top: 0px;
+  }
+  .ticket-image-container {
+    width: calc(100% - 20px);
+    height: 230px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .ticket-info {
+    color: var(--grey2);
+    margin-bottom: 15px;
+  }
+  .ticket-timelines {
+    color: var(--grey2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-weight: 600;
+    }
+  }
+
+  .ticket-overview {
+    margin-top: 30px;
+    h4 {
+      color: var(--grey2);
+      margin-bottom: 15px;
+    }
+
+    .price-breakup {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &:last-child {
+          color: var(--success);
+        }
+      }
+    }
+  }
+
+  .discount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--success);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .ticket-final-price-and-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .final-price {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+    }
+    .card {
+      height: auto;
+      margin-top: 10px;
+      padding: 16px 20px 16px 20px;
+      color: var(--grey1);
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        &:last-child {
+          font-weight: 400;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
